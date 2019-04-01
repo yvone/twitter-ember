@@ -1,5 +1,17 @@
-<div class="tweet-wrapper">
-	{{@data.createdAt}}
-	{{@data.userName}}
-	{{@data.description}}
+<div class="tweet-wrapper row">
+	<div>
+		<img
+			class="small-avatar"
+			src="https://static.onecms.io/wp-content/uploads/sites/37/2017/05/15215238/102997431.jpg"
+		/>
+	</div>
+	<div class="column tweet-content">
+		<div class="row">
+			<p class="user-name">
+				{{if @data.userName @data.userName 'Yvone'}}
+			</p>
+			<span class="timestamp">{{@data.createdAt}}</span>
+		</div>
+		<div class="tweet-info">{{@data.description}}</div>
+	</div>
 </div>
