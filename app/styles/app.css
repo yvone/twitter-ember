@@ -1,0 +1,21 @@
+.input-wrapper {
+	border: 1px solid blue;
+	padding: 10px;
+	margin: 10px;
+}
+
+.feed-wrapper {
+	border: 1px solid red;
+	padding: 10px;
+	margin: 10px;
+}
+
+.tweet-wrapper {
+	border: 1px solid orange;
+	padding: 10px;
+	margin: 10px;
+}
+
+.error-text {
+	color: red;
+}
