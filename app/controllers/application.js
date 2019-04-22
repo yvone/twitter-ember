@@ -5,10 +5,19 @@ import { action } from '@ember/object';
 export default class ApplicationController extends Controller {
 	@action
 	onSubmit (description) {
-		this.store.createRecord('tweet', {
-			userName: "Yvone",
-			description: description,
-			createdAt: "2019-04-01"
+		let user = this.store.peekRecord('user', 1);
+		// let user;
+		// this.store.findRecord('user', 1).then((result) => {
+		// 	user = result
+		// })
+		// console.log(user);
+
+		let tweet = this.store.createRecord('tweet', {
+			description: description
 		});
+
+		tweet.set('user', user);
+
+		tweet.save();
 	}
 }
