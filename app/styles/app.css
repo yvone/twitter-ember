@@ -88,6 +88,14 @@ button {
 	color: rgb(116,134,148);
 }
 
+.bg-img {
+	background-image: url("https://static.onecms.io/wp-content/uploads/sites/37/2017/05/15215238/102997431.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 400px;
+}
+
 .row {
 	display: flex;
 	flex-direction: row;
@@ -96,6 +104,23 @@ button {
 .column {
 	display: flex;
 	flex-direction: column;
+}
+
+.justify-content-space-between {
+	justify-content: space-between;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.self-top {
+	position: absolute;
+	align-self: flex-end;
+}
+
+.flex-end {
+	align-self: flex-end;
 }
 
 .dummy-tweet {

@@ -9,7 +9,12 @@
 	<div class="column tweet-content">
 		<div class="row">
 			<p class="user-name">
-				{{if @data.user.username @data.user.username 'Yvone'}}
+				<LinkTo 
+					@route="app.profile"
+					@model={{@data.user.id}}
+				>
+					{{@data.user.username}}
+				</LinkTo>
 			</p>
 			<span class="timestamp">{{@data.createdAt}}</span>
 		</div>

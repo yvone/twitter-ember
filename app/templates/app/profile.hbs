@@ -1,0 +1,17 @@
+<div class="row bg-img">
+</div>
+<div class="row">
+	<img
+		class="avatar self-top"
+		src={{this.model.user.avatar}}
+	/>
+</div>
+<div class="row justify-content-space-between">
+	<div class="column">
+	</div>
+	<div class="column">
+		<Feed
+			@tweets={{this.model.tweets}}
+		/>
+	</div>
+</div>
